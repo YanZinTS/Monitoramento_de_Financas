@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Monitorar Finanças</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Monitoramento Finanças</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        Adicionar Transação
+                    </div>
+                    <div class="card-body">
+                        <form id="transactionForm">
+                            <div class="form-group">
+                                <label for="initialBalance">Saldo Total Inicial:</label>
+                                <input type="number" id="initialBalance" class="form-control" step="0.01" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="description">Descrição:</label>
+                                <input type="text" id="description" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="amount">Valor:</label>
+                                <input type="number" id="amount" class="form-control" step="0.01" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="category">Categoria:</label>
+                                <select id="category" class="form-control">
+                                    <option value="alimentacao">Alimentação</option>
+                                    <option value="transporte">Transporte</option>
+                                    <option value="moradia">Moradia</option>
+                                    <option value="entretenimento">Entretenimento</option>
+                                    <option value="outros">Outros</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Adicionar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-info text-white">
+                        Balanço Atual
+                    </div>
+                    <div class="card-body">
+                        <h2 class="text-center">Saldo: <span id="balanceAmount">R$ 0.00</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-secondary text-white">
+                        Porcentagem de Gastos por Categoria
+                    </div>
+                    <div class="card-body">
+                        <div id="categoryPercentage"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-secondary text-white">
+                        Detalhes das Transações
+                    </div>
+                    <div class="card-body">
+                        <div id="transactionDetails"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script/script.js"></script>
+</body>
+</html>

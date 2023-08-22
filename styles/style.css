@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pragati+Narrow:wght@400;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    background-color: #f0f4f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 10px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.jumbotron {
+    background: linear-gradient(to right, #2ecc71, #27ae60);
+    padding: 40px;
+    border-radius: 15px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+.card {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    border-radius: 15px 15px 0 0;
+    background: linear-gradient(to right, #27ae60, #219653);
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.btn-primary {
+    background: linear-gradient(to right, #2ecc71, #27ae60);
+    border-color: #27ae60;
+    transition: background-color 0.3s, border-color 0.3s;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to right, #27ae60, #1e8449);
+    border-color: #1e8449;
+}
+
+.btn-danger {
+    background: linear-gradient(to right, #e74c3c, #c0392b);
+    border-color: #c0392b;
+    transition: background-color 0.3s, border-color 0.3s;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(to right, #c0392b, #943126);
+    border-color: #943126;
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border-color: #27ae60;
+    box-shadow: none;
+}
+
+.transaction-item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    transition: background-color 0.3s;
+}
+
+.transaction-item:hover {
+    background-color: #f8f9fa;
+}
+
+.category-label {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+#balanceAmount {
+    color: #27ae60;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#categoryPercentage {
+    padding: 25px;
+    background: linear-gradient(to right, #2ecc71, #27ae60);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#categoryPercentage:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.3);
+}
+
+#transactionDetails {
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#transactionDetails:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.3);
+}
+
+.delete-button {
+    background: linear-gradient(to right, #e74c3c, #c0392b);
+    border-color: #c0392b;
+    transition: background-color 0.3s, border-color 0.3s;
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.delete-button:hover {
+    background: linear-gradient(to right, #c0392b, #943126);
+    border-color: #943126;
+}
+
+.text-danger{
+    text-transform: capitalize;
+}
